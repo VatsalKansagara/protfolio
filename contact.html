@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vatsal Kansagara</title>
+    <link rel="icon" href="vklogo.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+
+<body>
+    <div class="about">
+        <nav>
+            <div class="logo">vatsal</div>
+            <ul class="navitems">
+                <li><a href="index.html">home</a></li>
+                <li><a href="about.html">about</a></li>
+                <li><a href="education.html">education</a></li>
+                <li><a href="prot.html">portfolio</a></li>
+                <li><a href="contact.html">contact</a></li>
+            </ul>
+            <div class="links">
+                <a href="https://www.linkedin.com/in/vatsal-patel-1ba190287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://www.instagram.com/vatsal_kansagara12?utm_source=qr&igsh=OHZkams4M2p3aGpq"
+                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://x.com/vatsalpatel1208?t=7pkerfO-aTifht7cXhqsUA&s=08" target="_blank"><i
+                        class="fa-brands fa-twitter"></i></a>
+            </div>
+        </nav>
+        <center>
+            <h5>Contact Me</h5>
+            <hr>
+        </center>
+        <div class="row">
+            <div class="contact">
+                <h3><i class="fas fa-envelope"></i> vatsalkansagara246@gmail.com </h3>
+                <h3><i class="fas fa-phone"></i> +91 95103 45505</h3>
+                <h3><i class="fas fa-map-marker-alt"></i> Rajkot Gujarat </h3>
+
+            </div>
+            <div class="form">
+                <form>
+                    <input type="text" class="box" id="name" placeholder="name" required>
+                    <input type="email" class="box" id="email" placeholder="email" required>
+                    <input type="text" class="box" id="sub" placeholder="subject" required>
+                    <textarea name="" id="msg" cols="30" rows="10" class="box message" placeholder="message"
+                        required></textarea>
+                    <button type="submit" onclick="gotowhatsapp()" class="btn"> send <i class="fas fa-paper-plane"></i></button>
+                </form>
+            </div>
+        </div>
+
+        
+        <script>
+            function gotowhatsapp(){
+                var name = document.getElementById('name').value;
+                var email = document.getElementById('email').value;
+                var sub = document.getElementById('sub').value;
+                var msg = document.getElementById('msg').value;
+
+                var url = "https://wa.me/+919510345505?text="+ "Name : "+ name + "%0a" + "Email : "+ email + "%0a" + "Subject : " + sub + "%0a" + "Message : " + msg;
+                window.open(url).focus();
+            }
+        </script>
+
+    </div>
+</body>
+
+</html>
