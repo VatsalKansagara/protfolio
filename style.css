@@ -269,21 +269,33 @@ p {
 
 
 @media screen and (min-width:320px) and (max-width:767px) {
-    .container {
+
+    body {
+        overflow: hidden;
         width: auto;
-        min-height: 80vh;
+    }
+
+    .container {
+        width:800px;
+        height: 50vh;
     }
 
     nav {
         display: inline;
-        width: auto;
-        justify-content: space-evenly;
+        width: 100%;
         height: 80px;
         z-index: 11;
     }
 
     .logo {
-        display: none;
+        display: flex;
+        font-size: 30px;
+        font-weight: 800;
+        color: #3d535f;
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin-left: 18px;
+        text-transform: uppercase;
     }
 
     .navitems {
@@ -292,18 +304,18 @@ p {
 
     .navitems li {
         list-style: none;
-        margin: 0px 14px;
+        margin: 0px 18px;
     }
 
     .navitems li a {
-        font-size: 13px;
+        font-size: 25px;
         letter-spacing: 1px;
     }
 
     .links a {
-        font-size: 25px;
+        font-size: 35px;
         color: #3d535f;
-        margin: 25px 10px;
+        margin: 25px 18px;
     }
 
     .wrapper {
@@ -330,10 +342,11 @@ p {
         width: 100%;
         width: 5px 25px 5px 25px;
         margin-top: -30px;
+        line-height: 1.5;
     }
 
     .cols h1 {
-        font-size: 35px;
+        font-size: 45px;
         margin-top: 15px;
     }
 
@@ -379,7 +392,7 @@ p {
         width: 100%;
         margin: 2px 15px;
         text-align: left;
-        font-size: 20px;
+        font-size: 25px;
         color: #3d535f;
     }
 
@@ -387,7 +400,7 @@ p {
         width: 100%;
         position: relative;
         left: 5px;
-        margin: 40px 15px;
+        margin: 40px 25px;
     }
 
     .imgbox {
@@ -407,22 +420,11 @@ p {
 
 
     .imgbox #splash {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%) rotate(-35deg);
-        width: 160%;
-        filter: saturate(200%);
-        animation: none;
+     display: none;
     }
 
     #splash1 {
-        width: 400px;
-        height: 400px;
-        box-shadow: 5px 5px 5px 5px rgb(78, 139, 231);
-        border-radius: 50%;
-        margin-left: 60px;
-        margin-top: 200px;
+     display: none;
     }
 
 }
