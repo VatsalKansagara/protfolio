@@ -83,13 +83,13 @@ hr {
 }
 
 .edu img {
-        float: left;
+    float: left;
 }
 
 .edu3 {
     width: 78%;
     line-height: 1.5;
-    border-left:2px solid #3d535f;
+    border-left: 2px solid #3d535f;
 }
 
 .edu3 p {
@@ -111,4 +111,76 @@ hr {
     color: #7f00ff;
     font-size: 25px;
     padding-bottom: 18px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    body {
+        overflow: hidden;
+        width: auto;
+    }
+
+    .about {
+        width: 800px;
+        height: 50vh;
+    }
+
+    nav {
+        display: inline;
+        width: 100%;
+        height: 80px;
+        z-index: 11;
+    }
+
+    .logo {
+        display: flex;
+        font-size: 30px;
+        font-weight: 800;
+        color: #3d535f;
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin-left: 25px;
+        text-transform: uppercase;
+    }
+
+    .navitems {
+        display: flex;
+    }
+
+    .navitems li {
+        list-style: none;
+        margin: 0px 25px;
+    }
+
+    .navitems li a {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .links a {
+        font-size: 35px;
+        color: #3d535f;
+        margin: 25px 18px 25px 25px;
+    }
+
+    .edu1 {
+        width: 100%;
+        display: block;
+        height: 350px;
+        justify-content: space-around;
+    }
+
+    .edu {
+        width: 60%;
+        height: 220px;
+        display: block;
+        padding: 25px;
+        margin-top: 45px;
+    }
+
+    .edu img {
+        float: left;
+        padding-left: 12px;
+    }
 }
