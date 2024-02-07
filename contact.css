@@ -128,3 +128,103 @@ button {
     background-color: #007bff;
     color: #ffffff;
 }
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    body {
+        overflow: hidden;
+        width: auto;
+    }
+
+    .about {
+        width: 800px;
+        height: 50vh;
+    }
+
+    nav {
+        display: inline;
+        width: 100%;
+        height: 80px;
+        z-index: 11;
+    }
+
+    .logo {
+        display: flex;
+        font-size: 30px;
+        font-weight: 800;
+        color: #3d535f;
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin-left: 25px;
+        text-transform: uppercase;
+    }
+
+    .navitems {
+        display: flex;
+    }
+
+    .navitems li {
+        list-style: none;
+        margin: 0px 25px;
+    }
+
+    .navitems li a {
+        font-size: 25px;
+        letter-spacing: 1px;
+    }
+
+    .links a {
+        font-size: 35px;
+        color: #3d535f;
+        margin: 25px 18px 25px 25px;
+    }
+    .row {
+        display: block;
+    }
+    .contact {
+        width: 22%;
+        padding: 5px auto;
+        display: inline-block;
+        line-height: 1.5;
+    }
+
+    
+.form {
+    width: 30%;
+    padding: 65px;
+    display: flex;
+    margin: 5px auto;
+    background-image: url(comhicl.png);
+}
+
+form {
+    /* background-color: rgba(185, 175, 175, 0.6); */
+    background-color: #ffffff;
+    margin-top: 30px;
+}
+
+.form input {
+    line-height: 1.5;
+    display: block;
+    padding: 5px;
+    margin: 10px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form textarea,
+button {
+    line-height: 1.5;
+    display: block;
+    cursor: pointer;
+    padding: 5px;
+    margin: 15px;
+    width: 250px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+}
