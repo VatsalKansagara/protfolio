@@ -72,7 +72,7 @@ hr {
 
 .contact {
     width: 22%;
-    padding: 45px 25px 25px 135px;
+    padding: 45px 25px 25px 145px;
     display: inline-block;
     line-height: 1.5;
 }
@@ -87,17 +87,16 @@ hr {
 }
 
 .form {
-    width: 25%;
+    width: 30%;
     padding: 25px 25px 25px 135px;
     display: flex;
     margin-left: 85px;
-    background-image: url(comhicl.png);
 }
 
 form {
     /* background-color: rgba(185, 175, 175, 0.6); */
     background-color: #ffffff;
-    margin-top: 30px;
+    margin-top: 10px;
 }
 
 .form input {
@@ -105,10 +104,18 @@ form {
     display: block;
     padding: 5px;
     margin: 10px;
-    width: 250px;
+    width: 450px;
     font-size: 15px;
     border-radius: 5px;
     cursor: pointer;
+    height: 30px;
+    background-color: rgb(204, 204, 204);
+    color: black;
+    border: #ffffff;
+}
+
+.form input:hover{
+    background-color: #e8f0fe;
 }
 
 .form textarea,
@@ -117,20 +124,30 @@ button {
     display: block;
     cursor: pointer;
     padding: 5px;
-    margin: 15px;
-    width: 250px;
+    margin: 10px;
+    width: 450px;
     font-size: 15px;
     border-radius: 5px;
+    background-color: rgb(204, 204, 204);
+    color: black;
+    border: #ffffff;
+}
+.form textarea:hover{
+    background-color: #e8f0fe;
+}
+.form .btn {
+    width: 150px;
+    margin-top: 15px;
 }
 
-
 .form button:hover {
-    background-color: #007bff;
+    background-color: #ff004f;
+    border: #ff004f;
     color: #ffffff;
 }
 
 
-@media screen and (min-width:320px) and (max-width:767px) {
+@media screen and (min-width:220px) and (max-width:867px) {
 
     body {
         overflow: hidden;
@@ -179,9 +196,11 @@ button {
         color: #3d535f;
         margin: 25px 18px 25px 25px;
     }
+
     .row {
         display: block;
     }
+
     .contact {
         width: 22%;
         padding: 5px auto;
@@ -189,42 +208,41 @@ button {
         line-height: 1.5;
     }
 
-    
-.form {
-    width: 30%;
-    padding: 65px;
-    display: flex;
-    margin: 5px auto;
-    background-image: url(comhicl.png);
-}
 
-form {
-    /* background-color: rgba(185, 175, 175, 0.6); */
-    background-color: #ffffff;
-    margin-top: 30px;
-}
+    .form {
+        width: 30%;
+        padding: 65px;
+        display: flex;
+        margin: 5px auto;
+    }
 
-.form input {
-    line-height: 1.5;
-    display: block;
-    padding: 5px;
-    margin: 10px;
-    width: 250px;
-    font-size: 15px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    form {
+        /* background-color: rgba(185, 175, 175, 0.6); */
+        background-color: #ffffff;
+        margin-top: 30px;
+    }
 
-.form textarea,
-button {
-    line-height: 1.5;
-    display: block;
-    cursor: pointer;
-    padding: 5px;
-    margin: 15px;
-    width: 250px;
-    font-size: 15px;
-    border-radius: 5px;
-}
+    .form input {
+        line-height: 1.5;
+        display: block;
+        padding: 5px;
+        margin: 10px;
+        width: 250px;
+        font-size: 15px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    .form textarea,
+    button {
+        line-height: 1.5;
+        display: block;
+        cursor: pointer;
+        padding: 5px;
+        margin: 15px;
+        width: 250px;
+        font-size: 15px;
+        border-radius: 5px;
+    }
 
 }
