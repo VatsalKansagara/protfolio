@@ -1,52 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
+* {
+    margin: 0;
+    padding: 0;
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vatsal Kansagara</title>
-    <link rel="icon" href="vklogo.jpg">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="prot.css">
-</head>
+    font-family: "poppins", sans-serif;
+}
 
-<body>
-    <div class="about">
-        <nav>
-            <div class="logo">vatsal</div>
-            <ul class="navitems">
-                <li><a href="index.html">home</a></li>
-                <li><a href="about.html">about</a></li>
-                <li><a href="education.html">education</a></li>
-                <li><a href="prot.html">portfolio</a></li>
-                <li><a href="contact.html">contact</a></li>
-            </ul>
-            <div class="links">
-                <a href="https://www.linkedin.com/in/vatsal-patel-1ba190287?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
-                    target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="https://www.instagram.com/vatsal_kansagara12?utm_source=qr&igsh=OHZkams4M2p3aGpq"
-                    target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://x.com/vatsalpatel1208?t=7pkerfO-aTifht7cXhqsUA&s=08" target="_blank"><i
-                        class="fa-brands fa-twitter"></i></a>
-            </div>
-        </nav>
-        <center>
-            <h5>My Portfolio</h5>
-            <hr>
-            <div class="box1">
-                <div class="box2">
-                    <a href="https://myshadi.vercel.app/" target="_blank">
-                        <img src="Screenshot 2024-02-05 205101.png" >
-                    </a>
-                </div>
-                <div class="box2">
-                    <a href="https://owl-carousel.vercel.app/" target="_blank">
-                        <img src="Screenshot 2024-02-05 205445.png" >
-                    </a>
-                </div>
-            </div>
-        </center>
-    </div>
-</body>
+.about {
+    width: 100%;
+}
 
-</html>
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    height: 80px;
+    z-index: 11;
+    line-height: 80px;
+}
+
+.logo {
+    display: flex;
+    font-size: 40px;
+    font-weight: 800;
+    color: #3d535f;
+    letter-spacing: 3px;
+    cursor: pointer;
+    text-transform: uppercase;
+    background-image: url(fire-flames.gif);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+.navitems {
+    display: flex;
+}
+
+.navitems li {
+    list-style: none;
+    margin: 0px 15px;
+}
+
+.navitems li a {
+    font-size: 25px;
+    color: #3d535f;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+.navitems li:hover a,
+.links a:hover {
+    color: #7f00ff;
+}
+
+.links a {
+    font-size: 30px;
+    color: #3d535f;
+    margin: 25px 10px;
+}
+
+hr {
+    width: 80%;
+}
+
+.about h5 {
+    font-size: 35px;
+    color: #3d535f;
+    margin: 45px 35px 15px 35px;
+}
+
+.edu1 {
+    width: 100%;
+    display: flex;
+    height: 350px;
+    justify-content: space-around;
+}
+
+.edu {
+    width: 25%;
+    height: 220px;
+    border: 1px solid #3d535f;
+    display: inline-block;
+    padding: 25px;
+    margin-top: 45px;
+}
+
+.edu img {
+    float: left;
+}
+
+.edu3 {
+    width: 78%;
+    line-height: 1.5;
+    border-left: 2px solid #3d535f;
+}
+
+.edu3 p {
+    color: #3d535f;
+    font-size: 17px;
+    text-align: justify;
+    padding: 5px 5px 5px 35px;
+    width: 70%;
+}
+
+#year {
+    color: #3d535f;
+    font-size: 17px;
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+.edu3 h4 {
+    color: #7f00ff;
+    font-size: 25px;
+    padding-bottom: 18px;
+}
+
+
+@media screen and (min-width:320px) and (max-width:767px) {
+
+    body {
+        overflow: hidden;
+        width: 100%;
+    }
+
+    .about {
+        width: 100%;
+        height:100px;
+    }
+
+    nav {
+        display: inline;
+        width: 100%;
+        height: 80px;
+        z-index: 11;
+    }
+
+    .logo {
+        display: flex;
+        font-size: 30px;
+        font-weight: 800;
+        color: #3d535f;
+        letter-spacing: 2px;
+        cursor: pointer;
+        margin-left: 15px;
+        text-transform: uppercase;
+        background-image: url(fire-flames.gif);
+        background-size: cover;
+        background-position: center;
+        color: transparent;
+        background-clip: text;
+        -webkit-background-clip: text;
+    }
+
+    .navitems {
+        display: flex;
+    }
+
+    .navitems li {
+        list-style: none;
+        margin: 0px 13px;
+    }
+
+    .navitems li a {
+        font-size: 14px;
+        letter-spacing: 1px;
+    }
+
+    .links a {
+        font-size: 35px;
+        color: #3d535f;
+        margin: 25px 18px 25px 25px;
+    }
+
+    .edu1 {
+        width: 100%;
+        display: inline;
+        height: 800px;
+    }
+
+    .edu {
+        width: 82%;
+        height: 220px;
+        display: inline-block;
+        padding: 25px;
+        margin-top: 45px;
+    }
+
+    .edu img {
+        float: left;
+    }
+}
