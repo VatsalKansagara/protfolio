@@ -26,6 +26,12 @@ nav {
     letter-spacing: 3px;
     cursor: pointer;
     text-transform: uppercase;
+    background-image: url(fire-flames.gif);
+    background-size: cover;
+    background-position: center;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
 }
 
 .navitems {
@@ -92,6 +98,7 @@ margin-top: 60px;
 
 .box2:hover img{
     transform:scale(1.2);
+    transition: 0.4s;
 }
 
 
