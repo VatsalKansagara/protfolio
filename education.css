@@ -33,6 +33,7 @@ nav {
     background-clip: text;
     -webkit-background-clip: text;
 }
+
 .navitems {
     display: flex;
 }
@@ -71,51 +72,33 @@ hr {
     margin: 45px 35px 15px 35px;
 }
 
-.edu1 {
+.box1{
+display: flex;
+width: 100%;
+height: 250px;
+justify-content: space-evenly;
+margin-top: 60px;
+}
+
+
+.box2{
+    height: 20rem;
+    width: 26rem;
+    border-radius: 1rem;
+    margin: 2rem;
+    overflow: hidden;
+    cursor: pointer;
+}
+.box2 img{
+    border-radius: 10px;
+    height: 100%;
     width: 100%;
-    display: flex;
-    height: 350px;
-    justify-content: space-around;
+    object-fit: cover;
 }
 
-.edu {
-    width: 25%;
-    height: 220px;
-    border: 1px solid #3d535f;
-    display: inline-block;
-    padding: 25px;
-    margin-top: 45px;
-}
-
-.edu img {
-    float: left;
-}
-
-.edu3 {
-    width: 78%;
-    line-height: 1.5;
-    border-left: 2px solid #3d535f;
-}
-
-.edu3 p {
-    color: #3d535f;
-    font-size: 17px;
-    text-align: justify;
-    padding: 5px 5px 5px 35px;
-    width: 70%;
-}
-
-#year {
-    color: #3d535f;
-    font-size: 17px;
-    text-align: center;
-    padding-bottom: 20px;
-}
-
-.edu3 h4 {
-    color: #7f00ff;
-    font-size: 25px;
-    padding-bottom: 18px;
+.box2:hover img{
+    transform:scale(1.2);
+    transition: 0.4s;
 }
 
 
@@ -123,12 +106,12 @@ hr {
 
     body {
         overflow: hidden;
-        width: 100%;
+        width: auto;
     }
 
     .about {
-        width: 100%;
-        height:100px;
+        width: 800px;
+        height: 50vh;
     }
 
     nav {
@@ -145,14 +128,8 @@ hr {
         color: #3d535f;
         letter-spacing: 2px;
         cursor: pointer;
-        margin-left: 15px;
+        margin-left: 25px;
         text-transform: uppercase;
-        background-image: url(fire-flames.gif);
-        background-size: cover;
-        background-position: center;
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
     }
 
     .navitems {
@@ -161,11 +138,11 @@ hr {
 
     .navitems li {
         list-style: none;
-        margin: 0px 13px;
+        margin: 0px 25px;
     }
 
     .navitems li a {
-        font-size: 14px;
+        font-size: 25px;
         letter-spacing: 1px;
     }
 
@@ -175,21 +152,21 @@ hr {
         margin: 25px 18px 25px 25px;
     }
 
-    .edu1 {
+    .box1{
+        display: block;
         width: 100%;
-        display: inline;
-        height: 800px;
-    }
+        height: 250px;
+        justify-content: space-evenly;
+        margin-top: 60px;
+        }
 
-    .edu {
-        width: 82%;
-        height: 220px;
-        display: inline-block;
-        padding: 25px;
-        margin-top: 45px;
-    }
-
-    .edu img {
-        float: left;
-    }
+        .box2{
+            height: 20rem;
+            width: 26rem;
+            border-radius: 1rem;
+            margin: 2rem;
+            margin-bottom: 65px;
+            overflow: hidden;
+            cursor: pointer;
+        }
 }
